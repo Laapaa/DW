@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="" href="style.css">
+</head>
+<body>
+  <h1>Pengisian Formulir </h1>
+
+
+<form id="formReg" method="post" action="">
+
+  <p class="Peringatan">
+    Semua Field Harus diisi dengan ketentuan yang sudah tertera
+  </p>
+
+  Full Name: <br>
+  <input type="text" name="namaLengkap" size="50" placeholder="Isikan Nama Lengkap anda" required>
+  <br>
+
+  Gender : <br>
+    <input type="radio" name="Jeniskelamin1" value="M" required>M
+  <br>
+  <input type="radio" name="Jeniskelamin" value="F" required>F
+  <address> <br>
+    <textarea name="Alamat"  cols="40" rows="3"></textarea>
+    <br>
+  </address>
+  city : <br>
+  <select name="Kota" required>
+          <option value=""Selected >- Choose City -</option>      
+          <option value="jkt">Jakarta</option>
+          <option value="bgr">Bogor</option>
+          <option value="Dpk">Depok</option>
+          <option value="Tng">tanggerang</option>
+          <option value="Bks">Bekasi</option>
+        </select>
+<br>
+username: <br>
+<input type="text" name="user" size="50" required>
+<br>
+password: <br>
+<input type="text" name="Pass" size="50" required>
+<br>
+<input type="submit" name="btnSubmit" value="REGISTER">
+<br>
+
+</form>
+
+</body>
+</html>

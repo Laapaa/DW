@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>HTML Form</title>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<input type="checkbox" id="check">
+		<div class="content">
+			<div class="contol">
+				<div></div>
+			</div>
+		</div>
+	</header>
+	<secion class="search-form">
+		<form type="search">
+			<input type="search" placeholder="Search here">
+		</form>
+		<div class="buttond">search</div>
+		<input type="checkbox" id="search-button">
+	</secion>
+
+	<div class="sugab">
+		<h1>HTML Form</h1>
+		
+		<form id="formReg" method="post" action="">
+		
+		<div class="peringatan">
+		semua elemen form harus diisi
+		</div>
+		
+		Full Name:<br>
+		<input type="text" name="namaLengkap" size="50" placeholder="isikan nama lengkap anda" required>
+		<br>
+		Gender:<br>
+		<input type="radio" name="jenisKelamin1" value="M" required>M
+		<br>
+		<input type="radio" name="jenisKelamin" value="F" required>F
+		<br>
+		Address:<br>
+		<textarea name="alamat" cols="40" rows="3">
+		</textarea>
+		<br>
+		City:<br>
+		<select name="kota" required>
+			<option value="" selected>- choose city -</option>
+			<option value="Jkt">Jakarta</option>
+			<option value="Bgr">Bogor</option>
+			<option value="Dpk">Depok</option>
+			<option value="Tng">Tangerang</option>
+			<option value="Bks">Bekasi</option>
+		</select>
+		<br>
+		Username:<br>
+		<input type="text" name="user" size="50" required>
+		<br>
+		Password:<br>
+		<input type="password" name="pass" size="50" required>
+		<br>
+		<input type="submit" name="btnSubmit" value="REGISTER">
+		<br>
+		</form>
+		
+		<div class="layout">
+			<div class="col">
+				<div class="layout-item">
+					<img src="kucing2.jfif" alt="icon">
+					<a href="#">Goride</a>
+				</div>
+			</div>
+		</div>
+		<div class="layout">
+			<div class="col">
+				<div class="layout-item">
+					<img src="kucing2.jfif" alt="icon">
+					<a href="#">Goride</a>
+				</div>
+			</div>
+		</div>
+		<div class="layout">
+			<div class="col">
+				<div class="layout-item">
+					<img src="kucing2.jfif" alt="icon">
+					<a href="#">Goride</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

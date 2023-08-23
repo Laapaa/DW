@@ -1,0 +1,106 @@
+body{
+  font-family: Segoe UI, Arial, sans-serif;
+  }
+  
+.peringatan{
+  color:#ff0000;
+  font-weight:bold;
+  margin-bottom:10px;
+  }
+
+.layout{
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  
+}
+.layout-item{
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 250px;
+  
+}
+.layout-item img{
+  width: 200px;
+}
+.col{
+  display: block;
+}
+
+/* punya gwehj */
+.content{
+  margin: 0 50px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contol{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.contol div{
+  width: 2rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+  transition: .5s;
+}
+.contol div:before,
+.contol div:after{
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  border-radius: 3px;
+  transition: .5s;
+}
+.contol div:before{
+  transform: translateY(-8px);
+}
+.contol div:after{
+  transform: translateY(8px);
+}
+
+#check{
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 4px;
+  left: 54px;
+  opacity: 0;
+  cursor: pointer;
+}
+#check:checked ~ .content .contol div:before{
+  transform: translateY(0) rotate(-45deg);
+}
+#check:checked ~ .content .contol div:after{
+  transform: translateY(0) rotate(45deg);
+}
+#check:checked ~ .content .contol div{
+  background-color: transparent;
+}
+#check:checked ~ .sugab{
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-form{
+  display: flex;
+}
+.buttond{
+  cursor: pointer;
+}
+#search-button{
+  position: absolute;
+  left: 200px;
+}
